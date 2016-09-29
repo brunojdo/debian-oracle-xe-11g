@@ -1,6 +1,6 @@
 FROM debian:8.6
 
-# MAINTAINER Wei-Ming Wu <wnameless@gmail.com>
+MAINTAINER Bruno Dias <contato@diasbruno.com>
 
 ADD assets /assets
 
