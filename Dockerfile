@@ -1,12 +1,15 @@
-FROM ubuntu:16.04
+FROM debian:8.6
 
-MAINTAINER Wei-Ming Wu <wnameless@gmail.com>
+# MAINTAINER Wei-Ming Wu <wnameless@gmail.com>
 
 ADD assets /assets
+
 RUN /assets/setup.sh
 
-EXPOSE 22
 EXPOSE 1521
-EXPOSE 8080
 
 CMD /usr/sbin/startup.sh && /usr/sbin/sshd -D
+
+RUN rm -rf /var/lib/apt/lists/* /var/cache
+
+ADD create-user.sql /docker-entrypoint-initdb.d/

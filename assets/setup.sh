@@ -43,6 +43,7 @@ chmod +x /usr/sbin/startup.sh &&
 
 # Remove installation files
 rm -r /assets/
-
+apt-get autoclean
+apt-get autoremove
 
 exit $?
