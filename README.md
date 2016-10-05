@@ -1,6 +1,8 @@
 docker-oracle-xe-11g
 ============================
 
+[![](https://images.microbadger.com/badges/image/brunodias20/oracle-11g_debian.svg)](https://microbadger.com/images/brunodias20/oracle-11g_debian "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/brunodias20/oracle-11g_debian.svg)](https://microbadger.com/images/brunodias20/oracle-11g_debian "Get your own version badge on microbadger.com")
+
 Oracle Express Edition 11g Release 2 on Debian Jessie 8.6
 
 _Based on wnameless/oracle-xe-11g/ docker image_ 
